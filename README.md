@@ -11,7 +11,7 @@ This is a implementation of Free Energy based Reinforcement Learning (FERL). Esp
 
 ## Execution
 `python sim.py`
-with execute the script and save "result.png" in the same folder
+will execute the script and save "result.png" in the same folder
 
 ## Notice
 Learning rate is different from the literature because the q value diverge when I set the learning rate value same to the literature.
