@@ -2,7 +2,7 @@
 
 ## Overview
 This is a implementation of Free Energy based Reinforcement Learning (FERL). Especially implements the Large Action Task described in 
-* Brian Sallans, Geoffrey E. Hinton, Reinforcement Learning with Factored States and Actions
+* Brian Sallans, Geoffrey E. Hinton (2004), Reinforcement Learning with Factored States and Actions, J. Mach. Learn. Res., 1063-1088
 
 ## Requirement
 * python2.7
