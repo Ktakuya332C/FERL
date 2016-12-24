@@ -63,7 +63,8 @@ class LargeActionTask:
     
     def next_key_state(self):
         ind = np.random.randint(0, self.n_key_states)
-        return self.key_states[ind, :]
+        self.current_state = self.key_states[ind, :]
+        return self.current_state
     
     def reward(self, action):
         ind = np.argmax(similarity(self.key_states, self.current_state))
@@ -102,7 +103,7 @@ class RBM:
         for i in range(n_sample):
             h = samp_vec(sig_vec(beta * self.tau(s, a)))
             a = samp_vec(sig_vec(beta * np.dot(self.u.T, h)))
-
+        
         return a
     
     def qlearn(self, s, a, r, lr):
